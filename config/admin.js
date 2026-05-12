@@ -2,4 +2,12 @@ module.exports = ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET', require('crypto').randomBytes(16).toString('base64')),
   },
+  apiToken: {
+    salt: env('API_TOKEN_SALT', require('crypto').randomBytes(16).toString('base64')),
+  },
+  transfer: {
+    token: {
+      salt: env('TRANSFER_TOKEN_SALT', require('crypto').randomBytes(16).toString('base64')),
+    },
+  },
 });
