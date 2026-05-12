@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_web1",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Anticife/Proyecto_Web1#readme",
+  "bugs": {
+    "url": "https://github.com/Anticife/Proyecto_Web1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anticife/Proyecto_Web1.git"
+  },
+  "license": "ISC",
+  "author": "Andres Hurtado",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
