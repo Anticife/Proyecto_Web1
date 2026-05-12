@@ -1,4 +1,4 @@
-# Backend (Strapi) - Proyecto_Web1
+# Backend (Strapi) - (Smart Estate)
 
 Resumen rápido de cómo configurar y arrancar el backend Strapi (Fase 1).
 
