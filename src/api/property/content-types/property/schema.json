@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "price": { "type": "decimal", "required": true },
+    "area": { "type": "float" },
+    "location": { "type": "string" },
+    "isFeatured": { "type": "boolean", "default": false },
+    "category": { "type": "relation", "relation": "manyToOne", "target": "api::category.category" },
+    "owner": { "type": "relation", "relation": "manyToOne", "target": "plugin::users-permissions.user" }
+  }
+}

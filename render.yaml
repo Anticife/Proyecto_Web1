@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: strapi-backend
+    env: node
+    plan: free # Puedes cambiarlo a starter si lo necesitas
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.x # Versión recomendada para Strapi v4
+      - key: DATABASE_CLIENT
+        value: postgres # Cambia a sqlite si no usarás base de datos externa
+      - key: DATABASE_URL
+        sync: false # Deberás configurar esta variable directamente en el dashboard de Render si usas postgres
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
+      - key: MERCADOPAGO_ACCESS_TOKEN
+        sync: false
+      - key: MERCADOPAGO_WEBHOOK_KEY
+        sync: false
+      # Generadores automáticos de secretos (Render los creará por ti la primera vez)
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+      - key: API_TOKEN_SALT
+        generateValue: true
+      - key: APP_KEYS
+        generateValue: true
+      - key: TRANSFER_TOKEN_SALT
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
