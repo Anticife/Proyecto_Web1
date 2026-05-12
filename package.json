@@ -8,8 +8,10 @@
     "build": "strapi build"
   },
   "dependencies": {
+    "@strapi/plugin-i18n": "^4.26.1",
+    "@strapi/plugin-users-permissions": "^4.26.1",
     "@strapi/provider-upload-cloudinary": "latest",
-    "@strapi/strapi": "^4.11.0",
+    "@strapi/strapi": "^4.26.1",
     "mercadopago": "latest",
     "mysql2": "^3.3.0",
     "pg": "^8.20.0",
