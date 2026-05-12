@@ -29,4 +29,4 @@ Siguientes pasos (Fase 2/3)
 - Implementar la integración con MercadoPago en el controller `createPreference` y `webhook` usando `strapi.entityService` para leer y mutar propiedades
 - Añadir pruebas de integración para flujos de pago
 
-Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
